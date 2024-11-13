@@ -1,3 +1,7 @@
+Product: https://nevel-tech-test.vercel.app/games/gamesHome
+![image](https://github.com/user-attachments/assets/d848bdb2-7dd0-410f-9236-6cd511a5b4c2)
+
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
