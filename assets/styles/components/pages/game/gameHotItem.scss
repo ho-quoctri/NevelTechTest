@@ -1,0 +1,101 @@
+.game-hot-item {
+  max-width: 490px;
+  .game-banner {
+    width: 100%;
+    height: 222px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .game-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    .game-information-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .game-logo {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .game-infor {
+        max-width: 270px;
+      }
+      .game-title {
+        font-size: 20px;
+        line-height: 23px;
+        font-weight: 600;
+        color: var(--black);
+        display: -webkit-box;        
+        -webkit-line-clamp: 1;    
+        -webkit-box-orient: vertical; 
+        overflow: hidden;
+      }
+      .game-description {
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--black);
+        padding-top: 8px;
+        display: -webkit-box;        
+        -webkit-line-clamp: 2;       
+        -webkit-box-orient: vertical; 
+        overflow: hidden;
+      }
+    }
+    .btn-view {
+      border: 1px solid var(--black-20);
+      border-radius: 2px;
+      padding: 7px 21px;
+      font-size: 14px;
+      font-weight: 600;
+      &:hover {
+        background-color: var(--black-20);
+        border: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .game-hot-item {
+    max-width: 100%;
+    .game-banner {
+      height: 180px;
+    }
+    .game-information {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+      .game-information-left {
+        .game-logo {
+          width: 60px;
+          height: 60px;
+        }
+        .game-title {
+          font-size: 16px;
+          line-height: 18px;
+        }
+        .game-description {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+      .btn-view {
+        border: 1px solid var(--black-20);
+        border-radius: 2px;
+        padding: 7px 21px;
+        font-size: 14px;
+        font-weight: 600;
+        &:hover {
+          background-color: var(--black-20);
+          border: none;
+        }
+      }
+    }
+  }
+  
+}

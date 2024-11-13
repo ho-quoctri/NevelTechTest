@@ -1,0 +1,99 @@
+.game-menu-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 160px;
+  margin-top: 18px;
+  .menu-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 0;
+    color: var(--black-20);
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      color: var(--black-80);
+    }
+    .menu-item-icon {
+      filter: invert(79%) sepia(14%) saturate(22%) hue-rotate(27deg) brightness(104%) contrast(88%);
+    }
+    &:hover .menu-item-icon {
+      filter: none;
+    }
+    .item-name {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    &:nth-child(1){
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--black-20);
+    }
+    &:last-child{
+      display: none;
+    }
+  }
+  .menu-bar-item-active {
+      color: var(--black-80);
+    .menu-item-icon {
+      filter: none;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .game-menu-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid var(--black-20);
+    .menu-bar-item {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      width: 80px;
+      height: 80px;
+      color: var(--black-20);
+      &:hover {
+        color: var(--black-80);
+      }
+      .menu-item-icon {
+        filter: invert(79%) sepia(14%) saturate(22%) hue-rotate(27deg) brightness(104%) contrast(88%);
+      }
+      &:hover .menu-item-icon {
+        filter: none;
+      }
+      .item-name {
+        font-size: 10px;
+        overflow: hidden;
+        text-align: center;
+        font-weight: 600;
+      }
+      &:nth-child(1){
+        order: 4;
+        padding: 0;
+        border-bottom: none;
+      }
+      &:last-child{
+        order: 5;
+        display: flex;
+        border-left: 1px solid var(--black-20);
+      }
+    }
+    .menu-bar-item-active {
+        color: var(--black-80);
+        border-bottom: 1px solid var(--black);
+      .menu-item-icon {
+        filter: none;
+      }
+    }
+  }
+}

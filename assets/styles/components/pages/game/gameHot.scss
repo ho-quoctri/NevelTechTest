@@ -1,0 +1,28 @@
+.hot-games {
+  flex:1;
+  overflow:inherit;
+  .slider-item {
+  }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray-100);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .swiper-button-prev {
+    left: auto;
+    right: 30px;
+    top: -32px;
+  }
+  .swiper-button-next {
+    right: 8px;
+    top: -32px;
+  }
+  .swiper-button-disabled {
+
+  }
+}
